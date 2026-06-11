@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminarz Fazy Grupowej MŚ 2026</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { text-align: center; color: #1a365d; margin-bottom: 25px; font-size: 28px; }
+        
+        /* Menu / Zakładki */
+        .menu { display: flex; justify-content: center; gap: 15px; margin-bottom: 30px; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; }
+        .menu-btn { background: #edf2f7; color: #4a5568; border: none; padding: 12px 24px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; }
+        .menu-btn.active { background: #0066cc; color: white; box-shadow: 0 4px 6px rgba(0,102,204,0.2); }
+        .menu-btn:hover { background: #cbd5e0; }
+        .menu-btn.active:hover { background: #0052a3; }
+        
+        /* Sekcje */
+        .section { display: none; }
+        .section.active { display: block; }
+        
+        /* Tabele i Grupy */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 15px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+        th { background-color: #1a365d; color: white; text-transform: uppercase; font-size: 13px; letter-spacing: 0.5px; }
+        tr:hover { background-color: #f8fafc; }
+        
+        .date { font-weight: bold; color: #0066cc; width: 25%; }
+        .match-details { width: 60%; }
+        .group-tag { font-weight: 600; color: #718096; width: 15%; text-align: right; }
+        .team { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+        
+        .grid-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 20px; }
+        .group-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; }
+        .group-title { font-size: 18px; color: #1a365d; border-bottom: 2px solid #0066cc; padding-bottom: 5px; margin-top: 0; margin-bottom: 15px; }
+        .group-box table { margin-bottom: 0; }
+        .group-box th { background-color: #2d3748; }
+        
+        @media (max-width: 768px) {
+            .grid-groups { grid-template-columns: 1fr; }
+            .menu { flex-direction: column; }
+            th, td { padding: 8px 10px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🏆 Terminarz Fazy Grupowej MŚ 2026 (Czas PL)</h1>
+    
+    <!-- Menu nawigacyjne -->
+    <div class="menu">
+        <button class="menu-btn active" onclick="switchSection('chronological', this)">📅 Widok Chronologiczny</button>
+        <button class="menu-btn" onclick="switchSection('groups', this)">🗂️ Podział na Grupy</button>
+    </div>
+
+    <!-- SEKCJA 1: CHRONOLOGICZNIE -->
+    <div id="chronological" class="section active">
+        <table>
+            <thead>
+                <tr>
+                    <th>Data i godzina (PL)</th>
+                    <th>Mecz</th>
+                    <th style="text-align: right;">Grupa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dzień 1 -->
+                <tr><td class="date">11 czerwca, 21:00</td><td class="match-details"><span class="team">🇲🇽 Meksyk</span> vs <span class="team">🇿🇦 RPA</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">12 czerwca, 04:00</td><td class="match-details"><span class="team">🇰🇷 Korea Płd.</span> vs <span class="team">🇨🇿 Czechy</span></td><td class="group-tag">Grupa A</td></tr>
+                <!-- Dzień 2 -->
+                <tr><td class="date">12 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇦 Kanada</span> vs <span class="team">🇧🇦 Bośnia i Herc.</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">13 czerwca, 03:00</td><td class="match-details"><span class="team">🇺🇸 USA</span> vs <span class="team">🇵🇾 Paragwaj</span></td><td class="group-tag">Grupa D</td></tr>
+                <!-- Dzień 3 -->
+                <tr><td class="date">13 czerwca, 21:00</td><td class="match-details"><span class="team">🇶🇦 Katar</span> vs <span class="team">🇨🇭 Szwajcaria</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">14 czerwca, 00:00</td><td class="match-details"><span class="team">🇧🇷 Brazylia</span> vs <span class="team">🇲🇦 Maroko</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">14 czerwca, 03:00</td><td class="match-details"><span class="team">🇭🇹 Haiti</span> vs <span class="team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Szkocja</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">14 czerwca, 06:00</td><td class="match-details"><span class="team">🇦🇺 Australia</span> vs <span class="team">🇹🇷 Turcja</span></td><td class="group-tag">Grupa D</td></tr>
+                <!-- Dzień 4 -->
+                <tr><td class="date">14 czerwca, 19:00</td><td class="match-details"><span class="team">🇩🇪 Niemcy</span> vs <span class="team">🇨🇼 Curaçao</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">14 czerwca, 22:00</td><td class="match-details"><span class="team">🇳🇱 Holandia</span> vs <span class="team">🇯🇵 Japonia</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">15 czerwca, 01:00</td><td class="match-details"><span class="team">🇨🇮 Wybrzeże Kości Sł.</span> vs <span class="team">🇪🇨 Ekwador</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">15 czerwca, 04:00</td><td class="match-details"><span class="team">🇸🇪 Szwecja</span> vs <span class="team">🇹🇳 Tunezja</span></td><td class="group-tag">Grupa F</td></tr>
+                <!-- Dzień 5 -->
+                <tr><td class="date">15 czerwca, 18:00</td><td class="match-details"><span class="team">🇪🇸 Hiszpania</span> vs <span class="team">🇨🇻 Rep. Zielonego Przylądka</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">15 czerwca, 21:00</td><td class="match-details"><span class="team">🇧🇪 Belgia</span> vs <span class="team">🇪🇬 Egipt</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">16 czerwca, 00:00</td><td class="match-details"><span class="team">🇦🇷 Argentyna</span> vs <span class="team">🇮🇷 Iran</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">16 czerwca, 03:00</td><td class="match-details"><span class="team">🇨🇱 Chile</span> vs <span class="team">🇩🇿 Algieria</span></td><td class="group-tag">Grupa I</td></tr>
+                <!-- Dzień 6 -->
+                <tr><td class="date">16 czerwca, 18:00</td><td class="match-details"><span class="team">🇮🇹 Włochy</span> vs <span class="team">🇨🇲 Kamerun</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">16 czerwca, 21:00</td><td class="match-details"><span class="team">🇫🇷 Francja</span> vs <span class="team">🇭🇳 Honduras</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">17 czerwca, 00:00</td><td class="match-details"><span class="team">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglia</span> vs <span class="team">🇺🇿 Uzbekistan</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">17 czerwca, 03:00</td><td class="match-details"><span class="team">🇵🇵 Peru</span> vs <span class="team">🇳🇬 Nigeria</span></td><td class="group-tag">Grupa J</td></tr>
+                <!-- Dzień 7 -->
+                <tr><td class="date">17 czerwca, 18:00</td><td class="match-details"><span class="team">🇺🇾 Urugwaj</span> vs <span class="team">🇳🇿 Nowa Zelandia</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">17 czerwca, 21:00</td><td class="match-details"><span class="team">🇭🇷 Chorwacja</span> vs <span class="team">🇮🇶 Irak</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">18 czerwca, 00:00</td><td class="match-details"><span class="team">🇵🇹 Portugalia</span> vs <span class="team">🇴🇲 Oman</span></td><td class="group-tag">Grupa L</td></tr>
+                <tr><td class="date">18 czerwca, 03:00</td><td class="match-details"><span class="team">🇩🇰 Dania</span> vs <span class="team">🇸🇳 Senegal</span></td><td class="group-tag">Grupa L</td></tr>
+                <!-- Druga kolejka (Przykładowy wyciąg hitów kolejno) -->
+                <tr><td class="date">18 czerwca, 18:00</td><td class="match-details"><span class="team">🇲🇽 Meksyk</span> vs <span class="team">🇰🇷 Korea Płd.</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">18 czerwca, 21:00</td><td class="match-details"><span class="team">🇿🇦 RPA</span> vs <span class="team">🇨🇿 Czechy</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">19 czerwca, 18:00</td><td class="match-details"><span class="team">🇨🇦 Kanada</span> vs <span class="team">🇶🇦 Katar</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">19 czerwca, 21:00</td><td class="match-details"><span class="team">🇧🇦 Bośnia i Herc.</span> vs <span class="team">🇨🇭 Szwajcaria</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">20 czerwca, 00:00</td><td class="match-details"><span class="team">🇧🇷 Brazylia</span> vs <span class="team">🇭🇹 Haiti</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">20 czerwca, 03:00</td><td class="match-details"><span class="team">🇲🇦 Maroko</span> vs <span class="team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Szkocja</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">20 czerwca, 18:00</td><td class="match-details"><span class="team">🇺🇸 USA</span> vs <span class="team">🇦🇺 Australia</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">20 czerwca, 21:00</td><td class="match-details"><span class="team">🇵🇾 Paragwaj</span> vs <span class="team">🇹🇷 Turcja</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">21 czerwca, 18:00</td><td class="match-details"><span class="team">🇩🇪 Niemcy</span> vs <span class="team">🇨🇮 Wybrzeże Kości Sł.</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">21 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇼 Curaçao</span> vs <span class="team">🇪🇨 Ekwador</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">22 czerwca, 18:00</td><td class="match-details"><span class="team">🇳🇱 Holandia</span> vs <span class="team">🇸🇪 Szwecja</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">22 czerwca, 21:00</td><td class="match-details"><span class="team">🇯🇵 Japonia</span> vs <span class="team">🇹🇳 Tunezja</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">23 czerwca, 18:00</td><td class="match-details"><span class="team">🇧🇪 Belgia</span> vs <span class="team">🇮🇹 Włochy</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">23 czerwca, 21:00</td><td class="match-details"><span class="team">🇪🇬 Egipt</span> vs <span class="team">🇨🇲 Kamerun</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">24 czerwca, 18:00</td><td class="match-details"><span class="team">🇫🇷 Francja</span> vs <span class="team">🇪🇸 Hiszpania</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team">🇭🇳 Honduras</span> vs <span class="team">🇨🇻 Rep. Zielonego Przylądka</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">25 czerwca, 18:00</td><td class="match-details"><span class="team">🇦🇷 Argentyna</span> vs <span class="team">🇨🇱 Chile</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team">🇮🇷 Iran</span> vs <span class="team">🇩🇿 Algieria</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">26 czerwca, 18:00</td><td class="match-details"><span class="team">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglia</span> vs <span class="team">🇵🇪 Peru</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team">🇺🇿 Uzbekistan</span> vs <span class="team">🇳🇬 Nigeria</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">27 czerwca, 18:00</td><td class="match-details"><span class="team">🇺🇾 Urugwaj</span> vs <span class="team">🇭🇷 Chorwacja</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team">🇳🇿 Nowa Zelandia</span> vs <span class="team">🇮🇶 Irak</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">27 czerwca, 23:00</td><td class="match-details"><span class="team">🇵🇹 Portugalia</span> vs <span class="team">🇩🇰 Dania</span></td><td class="group-tag">Grupa L</td></tr>
+                <tr><td class="date">28 czerwca, 02:00</td><td class="match-details"><span class="team">🇴🇲 Oman</span> vs <span class="team">🇸🇳 Senegal</span></td><td class="group-tag">Grupa L</td></tr>
+                <!-- Trzecia kolejka (Decydujące mecze, rozgrywane równolegle) -->
+                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇿 Czechy</span> vs <span class="team">🇲🇽 Meksyk</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team">🇿🇦 RPA</span> vs <span class="team">🇰🇷 Korea Płd.</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">25 czerwca, 00:00</td><td class="match-details"><span class="team">🇨🇭 Szwajcaria</span> vs <span class="team">🇨🇦 Kanada</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">25 czerwca, 00:00</td><td class="match-details"><span class="team">🇧🇦 Bośnia i Herc.</span> vs <span class="team">🇶🇦 Katar</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Szkocja</span> vs <span class="team">🇧🇷 Brazylia</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team">🇲🇦 Maroko</span> vs <span class="team">🇭🇹 Haiti</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">26 czerwca, 00:00</td><td class="match-details"><span class="team">🇹🇷 Turcja</span> vs <span class="team">🇺🇸 USA</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">26 czerwca, 00:00</td><td class="match-details"><span class="team">🇵🇾 Paragwaj</span> vs <span class="team">🇦🇺 Australia</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team">🇪🇨 Ekwador</span> vs <span class="team">🇩🇪 Niemcy</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇮 Wybrzeże Kości Sł.</span> vs <span class="team">🇨🇼 Curaçao</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">27 czerwca, 00:00</td><td class="match-details"><span class="team">🇹🇳 Tunezja</span> vs <span class="team">🇳🇱 Holandia</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">27 czerwca, 00:00</td><td class="match-details"><span class="team">🇯🇵 Japonia</span> vs <span class="team">🇸🇪 Szwecja</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇲 Kamerun</span> vs <span class="team">🇧🇪 Belgia</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team">🇪🇬 Egipt</span> vs <span class="team">🇮🇹 Włochy</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">28 czerwca, 00:00</td><td class="match-details"><span class="team">🇨🇻 Rep. Zielonego Przylądka</span> vs <span class="team">🇫🇷 Francja</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">28 czerwca, 00:00</td><td class="match-details"><span class="team">🇭🇳 Honduras</span> vs <span class="team">🇪🇸 Hiszpania</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">28 czerwca, 21:00</td><td class="match-details"><span class="team">🇩🇿 Algieria</span> vs <span class="team">🇦🇷 Argentyna</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">28 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇱 Chile</span> vs <span class="team">🇮🇷 Iran</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">29 czerwca, 00:00</td><td class="match-details"><span class="team">🇳🇬 Nigeria</span> vs <span class="team">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglia</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">29 czerwca, 00:00</td><td class="match-details"><span class="team">🇵🇪 Peru</span> vs <span class="team">🇺🇿 Uzbekistan</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">29 czerwca, 21:00</td><td class="match-details"><span class="team">🇮🇶 Irak</span> vs <span class="team">🇺🇾 Urugwaj</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">29 czerwca, 21:00</td><td class="match-details"><span class="team">🇭🇷 Chorwacja</span> vs <span class="team">🇳🇿 Nowa Zelandia</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">30 czerwca, 00:00</td><td class="match-details"><span class="team">🇸🇳 Senegal</span> vs <span class="team">🇵🇹 Portugalia</span></td><td class="group-tag">Grupa L</td></tr>
+                <tr><td class="date">30 czerwca, 00:00</td><td class="match-details"><span class="team">🇩🇰 Dania</span> vs <span class="team">🇴🇲 Oman</span></td><td class="group-tag">Grupa L</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- SEKCJA 2: PODZIAŁ NA GRUPY -->
+    <div id="groups" class="section">
+        <div class="grid-groups">
+            <!-- GRUPA A -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa A</h3>
+                <table>
+                    <tbody>
+                        <tr><td>11.06, 21:00</td><td>🇲🇽 MEX vs 🇿🇦 RPA</td></tr>
+                        <tr><td>12.06, 04:00</td><td>🇰🇷 KOR vs 🇨🇿 CZE</td></tr>
+                        <tr><td>18.06, 18:00</td><td>🇲🇽 MEX vs 🇰🇷 KOR</td></tr>
+                        <tr><td>18.06, 21:00</td><td>🇿🇦 RPA vs 🇨🇿 CZE</td></tr>
+                        <tr><td>24.06, 21:00</td><td>🇨🇿 CZE vs 🇲🇽 MEX</td></tr>
+                        <tr><td>24.06, 21:00</td><td>🇿🇦 RPA vs 🇰🇷 KOR</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA B -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa B</h3>
+                <table>
+                    <tbody>
+                        <tr><td>12.06, 21:00</td><td>🇨🇦 CAN vs 🇧🇦 BIH</td></tr>
+                        <tr><td>13.06, 21:00</td><td>🇶🇦 QAT vs 🇨🇭 SUI</td></tr>
+                        <tr><td>19.06, 18:00</td><td>🇨🇦 CAN vs 🇶🇦 QAT</td></tr>
+                        <tr><td>19.06, 21:00</td><td>🇧🇦 BIH vs 🇨🇭 SUI</td></tr>
+                        <tr><td>25.06, 00:00</td><td>🇨🇭 SUI vs 🇨🇦 CAN</td></tr>
+                        <tr><td>25.06, 00:00</td><td>🇧🇦 BIH vs 🇶🇦 QAT</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA C -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa C</h3>
+                <table>
+                    <tbody>
+                        <tr><td>14.06, 00:00</td><td>🇧🇷 BRA vs 🇲🇦 MAR</td></tr>
+                        <tr><td>14.06, 03:00</td><td>🇭🇹 HAI vs 🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO</td></tr>
+                        <tr><td>20.06, 00:00</td><td>🇧🇷 BRA vs 🇭🇹 HAI</td></tr>
+                        <tr><td>20.06, 03:00</td><td>🇲🇦 MAR vs 🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO</td></tr>
+                        <tr><td>25.06, 21:00</td><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO vs 🇧🇷 BRA</td></tr>
+                        <tr><td>25.06, 21:00</td><td>🇲🇦 MAR vs 🇭🇹 HAI</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA D -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa D</h3>
+                <table>
+                    <tbody>
+                        <tr><td>13.06, 03:00</td><td>🇺🇸 USA vs 🇵🇾 PAR</td></tr>
+                        <tr><td>14.06, 06:00</td><td>🇦🇺 AUS vs 🇹🇷 TUR</td></tr>
+                        <tr><td>20.06, 18:00</td><td>🇺🇸 USA vs 🇦🇺 AUS</td></tr>
+                        <tr><td>20.06, 21:00</td><td>🇵🇾 PAR vs 🇹🇷 TUR</td></tr>
+                        <tr><td>26.06, 00:00</td><td>🇹🇷 TUR vs 🇺🇸 USA</td></tr>
+                        <tr><td>26.06, 00:00</td><td>🇵🇾 PAR vs 🇦🇺 AUS</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA E -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa E</h3>
+                <table>
+                    <tbody>
+                        <tr><td>14.06, 19:00</td><td>🇩🇪 GER vs 🇨🇼 CUW</td></tr>
+                        <tr><td>15.06, 01:00</td><td>🇨🇮 CIV vs 🇪🇨 ECU</td></tr>
+                        <tr><td>21.06, 18:00</td><td>🇩🇪 GER vs 🇨🇮 CIV</td></tr>
+                        <tr><td>21.06, 21:00</td><td>🇨🇼 CUW vs 🇪🇨 ECU</td></tr>
+                        <tr><td>26.06, 21:00</td><td>🇪🇨 ECU vs 🇩🇪 GER</td></tr>
+                        <tr><td>26.06, 21:00</td><td>🇨🇮 CIV vs 🇨🇼 CUW</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA F -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa F</h3>
+                <table>
+                    <tbody>
+                        <tr><td>14.06, 22:00</td><td>🇳🇱 NED vs 🇯🇵 JPN</td></tr>
+                        <tr><td>15.06, 04:00</td><td>🇸🇪 SWE vs 🇹🇳 TUN</td></tr>
+                        <tr><td>22.06, 18:00</td><td>🇳🇱 NED vs 🇸🇪 SWE</td></tr>
+                        <tr><td>22.06, 21:00</td><td>🇯🇵 JPN vs 🇹🇳 TUN</td></tr>
+                        <tr><td>27.06, 00:00</td><td>🇹🇳 TUN vs 🇳🇱 NED</td></tr>
+                        <tr><td>27.06, 00:00</td><td>🇯🇵 JPN vs 🇸🇪 SWE</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA G -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa G</h3>
+                <table>
+                    <tbody>
+                        <tr><td>15.06, 21:00</td><td>🇧🇪 BEL vs 🇪🇬 EGY</td></tr>
+                        <tr><td>16.06, 18:00</td><td>🇮🇹 ITA vs 🇨🇲 CMR</td></tr>
+                        <tr><td>23.06, 18:00</td><td>🇧🇪 BEL vs 🇮🇹 ITA</td></tr>
+                        <tr><td>23.06, 21:00</td><td>🇪🇬 EGY vs 🇨🇲 CMR</td></tr>
+                        <tr><td>27.06, 21:00</td><td>🇨🇲 CMR vs 🇧🇪 BEL</td></tr>
+                        <tr><td>27.06, 21:00</td><td>🇪🇬 EGY vs 🇮🇹 ITA</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA H -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa H</h3>
+                <table>
+                    <tbody>
+                        <tr><td>15.06, 18:00</td><td>🇪🇸 ESP vs 🇨🇻 CPV</td></tr>
+                        <tr><td>16.06, 21:00</td><td>🇫🇷 FRA vs 🇭🇳 HON</td></tr>
+                        <tr><td>24.06, 18:00</td><td>🇫🇷 FRA vs 🇪🇸 ESP</td></tr>
+                        <tr><td>24.06, 21:00</td><td>🇭🇳 HON vs 🇨🇻 CPV</td></tr>
+                        <tr><td>28.06, 00:00</td><td>🇨🇻 CPV vs 🇫🇷 FRA</td></tr>
+                        <tr><td>28.06, 00:00</td><td>🇭🇳 HON vs 🇪🇸 ESP</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA I -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa I</h3>
+                <table>
+                    <tbody>
+                        <tr><td>16.06, 00:00</td><td>🇦🇷 ARG vs 🇮🇷 IRN</td></tr>
+                        <tr><td>16.06, 03:00</td><td>🇨🇱 CHI vs 🇩🇿 ALG</td></tr>
+                        <tr><td>25.06, 18:00</td><td>🇦🇷 ARG vs 🇨🇱 CHI</td></tr>
+                        <tr><td>25.06, 21:00</td><td>🇮🇷 IRN vs 🇩🇿 ALG</td></tr>
+                        <tr><td>28.06, 21:00</td><td>🇩🇿 ALG vs 🇦🇷 ARG</td></tr>
+                        <tr><td>28.06, 21:00</td><td>🇨🇱 CHI vs 🇮🇷 IRN</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA J -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa J</h3>
+                <table>
+                    <tbody>
+                        <tr><td>17.06, 00:00</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG vs 🇺🇿 UZB</td></tr>
+                        <tr><td>17.06, 03:00</td><td>🇵🇪 PER vs 🇳🇬 NGA</td></tr>
+                        <tr><td>26.06, 18:00</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG vs 🇵🇪 PER</td></tr>
+                        <tr><td>26.06, 21:00</td><td>🇺🇿 UZB vs 🇳🇬 NGA</td></tr>
+                        <tr><td>29.06, 00:00</td><td>🇳🇬 NGA vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</td></tr>
+                        <tr><td>29.06, 00:00</td><td>🇵🇪 PER vs 🇺🇿 UZB</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA K -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa K</h3>
+                <table>
+                    <tbody>
+                        <tr><td>17.06, 18:00</td><td>🇺🇾 URU vs 🇳🇿 NZL</td></tr>
+                        <tr><td>17.06, 21:00</td><td>🇭🇷 CRO vs 🇮🇶 IRQ</td></tr>
+                        <tr><td>27.06, 18:00</td><td>🇺🇾 URU vs 🇭🇷 CRO</td></tr>
+                        <tr><td>27.06, 21:00</td><td>🇳🇿 NZL vs 🇮🇶 IRQ</td></tr>
+                        <tr><td>29.06, 21:00</td><td>🇮🇶 IRQ vs 🇺🇾 URU</td></tr>
+                        <tr><td>29.06, 21:00</td><td>🇭🇷 CRO vs 🇳🇿 NZL</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- GRUPA L -->
+            <div class="group-box">
+                <h3 class="group-title">Grupa L</h3>
+                <table>
+                    <tbody>
+                        <tr><td>18.06, 00:00</td><td>🇵🇹 POR vs 🇴🇲 OMA</td></tr>
+                        <tr><td>18.06, 03:00</td><td>🇩🇰 DEN vs 🇸🇳 SEN</td></tr>
+                        <tr><td>27.06, 23:00</td><td>🇵🇹 POR vs 🇩🇰 DEN</td></tr>
+                        <tr><td>28.06, 02:00</td><td>🇴🇲 OMA vs 🇸🇳 SEN</td></tr>
+                        <tr><td>30.06, 00:00</td><td>🇸🇳 SEN vs 🇵🇹 POR</td></tr>
+                        <tr><td>30.06, 00:00</td><td>🇩🇰 DEN vs 🇴🇲 OMA</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchSection(sectionId, button) {
+        // Ukryj wszystkie sekcje
+        document.querySelectorAll('.section').forEach(section => {
+            section.classList.remove('active');
+        });
+        // Odznacz wszystkie przyciski
+        document.querySelectorAll('.menu-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Pokaż wybraną sekcję i zaznacz aktywny przycisk
+        document.getElementById(sectionId).classList.add('active');
+        button.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
