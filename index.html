@@ -29,7 +29,11 @@
         .date { font-weight: bold; color: #0066cc; width: 25%; }
         .match-details { width: 60%; }
         .group-tag { font-weight: 600; color: #718096; width: 15%; text-align: right; }
-        .team { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+        
+        /* Styl dla flag-obrazków */
+        .team { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; }
+        .flag { width: 24px; height: auto; border: 1px solid #ddd; border-radius: 2px; vertical-align: middle; }
+        .flag-mini { width: 18px; height: auto; border: 1px solid #ddd; border-radius: 2px; vertical-align: middle; margin-right: 4px; }
         
         .grid-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 20px; }
         .group-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; }
@@ -67,86 +71,86 @@
             </thead>
             <tbody>
                 <!-- Dzień 1 -->
-                <tr><td class="date">11 czerwca, 21:00</td><td class="match-details"><span class="team">🇲🇽 Meksyk</span> vs <span class="team">🇿🇦 RPA</span></td><td class="group-tag">Grupa A</td></tr>
-                <tr><td class="date">12 czerwca, 04:00</td><td class="match-details"><span class="team">🇰🇷 Korea Płd.</span> vs <span class="team">🇨🇿 Czechy</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">11 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/mx.png" class="flag" alt=""> Meksyk</span> vs <span class="team"><img src="https://flagcdn.com/w40/za.png" class="flag" alt=""> RPA</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">12 czerwca, 04:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/kr.png" class="flag" alt=""> Korea Płd.</span> vs <span class="team"><img src="https://flagcdn.com/w40/cz.png" class="flag" alt=""> Czechy</span></td><td class="group-tag">Grupa A</td></tr>
                 <!-- Dzień 2 -->
-                <tr><td class="date">12 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇦 Kanada</span> vs <span class="team">🇧🇦 Bośnia i Herc.</span></td><td class="group-tag">Grupa B</td></tr>
-                <tr><td class="date">13 czerwca, 03:00</td><td class="match-details"><span class="team">🇺🇸 USA</span> vs <span class="team">🇵🇾 Paragwaj</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">12 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ca.png" class="flag" alt=""> Kanada</span> vs <span class="team"><img src="https://flagcdn.com/w40/ba.png" class="flag" alt=""> Bośnia i Herc.</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">13 czerwca, 03:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/us.png" class="flag" alt=""> USA</span> vs <span class="team"><img src="https://flagcdn.com/w40/py.png" class="flag" alt=""> Paragwaj</span></td><td class="group-tag">Grupa D</td></tr>
                 <!-- Dzień 3 -->
-                <tr><td class="date">13 czerwca, 21:00</td><td class="match-details"><span class="team">🇶🇦 Katar</span> vs <span class="team">🇨🇭 Szwajcaria</span></td><td class="group-tag">Grupa B</td></tr>
-                <tr><td class="date">14 czerwca, 00:00</td><td class="match-details"><span class="team">🇧🇷 Brazylia</span> vs <span class="team">🇲🇦 Maroko</span></td><td class="group-tag">Grupa C</td></tr>
-                <tr><td class="date">14 czerwca, 03:00</td><td class="match-details"><span class="team">🇭🇹 Haiti</span> vs <span class="team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Szkocja</span></td><td class="group-tag">Grupa C</td></tr>
-                <tr><td class="date">14 czerwca, 06:00</td><td class="match-details"><span class="team">🇦🇺 Australia</span> vs <span class="team">🇹🇷 Turcja</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">13 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/qa.png" class="flag" alt=""> Katar</span> vs <span class="team"><img src="https://flagcdn.com/w40/ch.png" class="flag" alt=""> Szwajcaria</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">14 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/br.png" class="flag" alt=""> Brazylia</span> vs <span class="team"><img src="https://flagcdn.com/w40/ma.png" class="flag" alt=""> Maroko</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">14 czerwca, 03:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ht.png" class="flag" alt=""> Haiti</span> vs <span class="team"><img src="https://flagcdn.com/w40/gb-sct.png" class="flag" alt=""> Szkocja</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">14 czerwca, 06:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/au.png" class="flag" alt=""> Australia</span> vs <span class="team"><img src="https://flagcdn.com/w40/tr.png" class="flag" alt=""> Turcja</span></td><td class="group-tag">Grupa D</td></tr>
                 <!-- Dzień 4 -->
-                <tr><td class="date">14 czerwca, 19:00</td><td class="match-details"><span class="team">🇩🇪 Niemcy</span> vs <span class="team">🇨🇼 Curaçao</span></td><td class="group-tag">Grupa E</td></tr>
-                <tr><td class="date">14 czerwca, 22:00</td><td class="match-details"><span class="team">🇳🇱 Holandia</span> vs <span class="team">🇯🇵 Japonia</span></td><td class="group-tag">Grupa F</td></tr>
-                <tr><td class="date">15 czerwca, 01:00</td><td class="match-details"><span class="team">🇨🇮 Wybrzeże Kości Sł.</span> vs <span class="team">🇪🇨 Ekwador</span></td><td class="group-tag">Grupa E</td></tr>
-                <tr><td class="date">15 czerwca, 04:00</td><td class="match-details"><span class="team">🇸🇪 Szwecja</span> vs <span class="team">🇹🇳 Tunezja</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">14 czerwca, 19:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/de.png" class="flag" alt=""> Niemcy</span> vs <span class="team"><img src="https://flagcdn.com/w40/cw.png" class="flag" alt=""> Curaçao</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">14 czerwca, 22:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/nl.png" class="flag" alt=""> Holandia</span> vs <span class="team"><img src="https://flagcdn.com/w40/jp.png" class="flag" alt=""> Japonia</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">15 czerwca, 01:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ci.png" class="flag" alt=""> Wybrzeże Kości Sł.</span> vs <span class="team"><img src="https://flagcdn.com/w40/ec.png" class="flag" alt=""> Ekwador</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">15 czerwca, 04:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/se.png" class="flag" alt=""> Szwecja</span> vs <span class="team"><img src="https://flagcdn.com/w40/tn.png" class="flag" alt=""> Tunezja</span></td><td class="group-tag">Grupa F</td></tr>
                 <!-- Dzień 5 -->
-                <tr><td class="date">15 czerwca, 18:00</td><td class="match-details"><span class="team">🇪🇸 Hiszpania</span> vs <span class="team">🇨🇻 Rep. Zielonego Przylądka</span></td><td class="group-tag">Grupa H</td></tr>
-                <tr><td class="date">15 czerwca, 21:00</td><td class="match-details"><span class="team">🇧🇪 Belgia</span> vs <span class="team">🇪🇬 Egipt</span></td><td class="group-tag">Grupa G</td></tr>
-                <tr><td class="date">16 czerwca, 00:00</td><td class="match-details"><span class="team">🇦🇷 Argentyna</span> vs <span class="team">🇮🇷 Iran</span></td><td class="group-tag">Grupa I</td></tr>
-                <tr><td class="date">16 czerwca, 03:00</td><td class="match-details"><span class="team">🇨🇱 Chile</span> vs <span class="team">🇩🇿 Algieria</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">15 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/es.png" class="flag" alt=""> Hiszpania</span> vs <span class="team"><img src="https://flagcdn.com/w40/cv.png" class="flag" alt=""> Rep. Zielonego Przylądka</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">15 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/be.png" class="flag" alt=""> Belgia</span> vs <span class="team"><img src="https://flagcdn.com/w40/eg.png" class="flag" alt=""> Egipt</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">16 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ar.png" class="flag" alt=""> Argentyna</span> vs <span class="team"><img src="https://flagcdn.com/w40/ir.png" class="flag" alt=""> Iran</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">16 czerwca, 03:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/cl.png" class="flag" alt=""> Chile</span> vs <span class="team"><img src="https://flagcdn.com/w40/dz.png" class="flag" alt=""> Algieria</span></td><td class="group-tag">Grupa I</td></tr>
                 <!-- Dzień 6 -->
-                <tr><td class="date">16 czerwca, 18:00</td><td class="match-details"><span class="team">🇮🇹 Włochy</span> vs <span class="team">🇨🇲 Kamerun</span></td><td class="group-tag">Grupa G</td></tr>
-                <tr><td class="date">16 czerwca, 21:00</td><td class="match-details"><span class="team">🇫🇷 Francja</span> vs <span class="team">🇭🇳 Honduras</span></td><td class="group-tag">Grupa H</td></tr>
-                <tr><td class="date">17 czerwca, 00:00</td><td class="match-details"><span class="team">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglia</span> vs <span class="team">🇺🇿 Uzbekistan</span></td><td class="group-tag">Grupa J</td></tr>
-                <tr><td class="date">17 czerwca, 03:00</td><td class="match-details"><span class="team">🇵🇵 Peru</span> vs <span class="team">🇳🇬 Nigeria</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">16 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/it.png" class="flag" alt=""> Włochy</span> vs <span class="team"><img src="https://flagcdn.com/w40/cm.png" class="flag" alt=""> Kamerun</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">16 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/fr.png" class="flag" alt=""> Francja</span> vs <span class="team"><img src="https://flagcdn.com/w40/hn.png" class="flag" alt=""> Honduras</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">17 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/gb-eng.png" class="flag" alt=""> Anglia</span> vs <span class="team"><img src="https://flagcdn.com/w40/uz.png" class="flag" alt=""> Uzbekistan</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">17 czerwca, 03:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/pe.png" class="flag" alt=""> Peru</span> vs <span class="team"><img src="https://flagcdn.com/w40/ng.png" class="flag" alt=""> Nigeria</span></td><td class="group-tag">Grupa J</td></tr>
                 <!-- Dzień 7 -->
-                <tr><td class="date">17 czerwca, 18:00</td><td class="match-details"><span class="team">🇺🇾 Urugwaj</span> vs <span class="team">🇳🇿 Nowa Zelandia</span></td><td class="group-tag">Grupa K</td></tr>
-                <tr><td class="date">17 czerwca, 21:00</td><td class="match-details"><span class="team">🇭🇷 Chorwacja</span> vs <span class="team">🇮🇶 Irak</span></td><td class="group-tag">Grupa K</td></tr>
-                <tr><td class="date">18 czerwca, 00:00</td><td class="match-details"><span class="team">🇵🇹 Portugalia</span> vs <span class="team">🇴🇲 Oman</span></td><td class="group-tag">Grupa L</td></tr>
-                <tr><td class="date">18 czerwca, 03:00</td><td class="match-details"><span class="team">🇩🇰 Dania</span> vs <span class="team">🇸🇳 Senegal</span></td><td class="group-tag">Grupa L</td></tr>
-                <!-- Druga kolejka (Przykładowy wyciąg hitów kolejno) -->
-                <tr><td class="date">18 czerwca, 18:00</td><td class="match-details"><span class="team">🇲🇽 Meksyk</span> vs <span class="team">🇰🇷 Korea Płd.</span></td><td class="group-tag">Grupa A</td></tr>
-                <tr><td class="date">18 czerwca, 21:00</td><td class="match-details"><span class="team">🇿🇦 RPA</span> vs <span class="team">🇨🇿 Czechy</span></td><td class="group-tag">Grupa A</td></tr>
-                <tr><td class="date">19 czerwca, 18:00</td><td class="match-details"><span class="team">🇨🇦 Kanada</span> vs <span class="team">🇶🇦 Katar</span></td><td class="group-tag">Grupa B</td></tr>
-                <tr><td class="date">19 czerwca, 21:00</td><td class="match-details"><span class="team">🇧🇦 Bośnia i Herc.</span> vs <span class="team">🇨🇭 Szwajcaria</span></td><td class="group-tag">Grupa B</td></tr>
-                <tr><td class="date">20 czerwca, 00:00</td><td class="match-details"><span class="team">🇧🇷 Brazylia</span> vs <span class="team">🇭🇹 Haiti</span></td><td class="group-tag">Grupa C</td></tr>
-                <tr><td class="date">20 czerwca, 03:00</td><td class="match-details"><span class="team">🇲🇦 Maroko</span> vs <span class="team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Szkocja</span></td><td class="group-tag">Grupa C</td></tr>
-                <tr><td class="date">20 czerwca, 18:00</td><td class="match-details"><span class="team">🇺🇸 USA</span> vs <span class="team">🇦🇺 Australia</span></td><td class="group-tag">Grupa D</td></tr>
-                <tr><td class="date">20 czerwca, 21:00</td><td class="match-details"><span class="team">🇵🇾 Paragwaj</span> vs <span class="team">🇹🇷 Turcja</span></td><td class="group-tag">Grupa D</td></tr>
-                <tr><td class="date">21 czerwca, 18:00</td><td class="match-details"><span class="team">🇩🇪 Niemcy</span> vs <span class="team">🇨🇮 Wybrzeże Kości Sł.</span></td><td class="group-tag">Grupa E</td></tr>
-                <tr><td class="date">21 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇼 Curaçao</span> vs <span class="team">🇪🇨 Ekwador</span></td><td class="group-tag">Grupa E</td></tr>
-                <tr><td class="date">22 czerwca, 18:00</td><td class="match-details"><span class="team">🇳🇱 Holandia</span> vs <span class="team">🇸🇪 Szwecja</span></td><td class="group-tag">Grupa F</td></tr>
-                <tr><td class="date">22 czerwca, 21:00</td><td class="match-details"><span class="team">🇯🇵 Japonia</span> vs <span class="team">🇹🇳 Tunezja</span></td><td class="group-tag">Grupa F</td></tr>
-                <tr><td class="date">23 czerwca, 18:00</td><td class="match-details"><span class="team">🇧🇪 Belgia</span> vs <span class="team">🇮🇹 Włochy</span></td><td class="group-tag">Grupa G</td></tr>
-                <tr><td class="date">23 czerwca, 21:00</td><td class="match-details"><span class="team">🇪🇬 Egipt</span> vs <span class="team">🇨🇲 Kamerun</span></td><td class="group-tag">Grupa G</td></tr>
-                <tr><td class="date">24 czerwca, 18:00</td><td class="match-details"><span class="team">🇫🇷 Francja</span> vs <span class="team">🇪🇸 Hiszpania</span></td><td class="group-tag">Grupa H</td></tr>
-                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team">🇭🇳 Honduras</span> vs <span class="team">🇨🇻 Rep. Zielonego Przylądka</span></td><td class="group-tag">Grupa H</td></tr>
-                <tr><td class="date">25 czerwca, 18:00</td><td class="match-details"><span class="team">🇦🇷 Argentyna</span> vs <span class="team">🇨🇱 Chile</span></td><td class="group-tag">Grupa I</td></tr>
-                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team">🇮🇷 Iran</span> vs <span class="team">🇩🇿 Algieria</span></td><td class="group-tag">Grupa I</td></tr>
-                <tr><td class="date">26 czerwca, 18:00</td><td class="match-details"><span class="team">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglia</span> vs <span class="team">🇵🇪 Peru</span></td><td class="group-tag">Grupa J</td></tr>
-                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team">🇺🇿 Uzbekistan</span> vs <span class="team">🇳🇬 Nigeria</span></td><td class="group-tag">Grupa J</td></tr>
-                <tr><td class="date">27 czerwca, 18:00</td><td class="match-details"><span class="team">🇺🇾 Urugwaj</span> vs <span class="team">🇭🇷 Chorwacja</span></td><td class="group-tag">Grupa K</td></tr>
-                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team">🇳🇿 Nowa Zelandia</span> vs <span class="team">🇮🇶 Irak</span></td><td class="group-tag">Grupa K</td></tr>
-                <tr><td class="date">27 czerwca, 23:00</td><td class="match-details"><span class="team">🇵🇹 Portugalia</span> vs <span class="team">🇩🇰 Dania</span></td><td class="group-tag">Grupa L</td></tr>
-                <tr><td class="date">28 czerwca, 02:00</td><td class="match-details"><span class="team">🇴🇲 Oman</span> vs <span class="team">🇸🇳 Senegal</span></td><td class="group-tag">Grupa L</td></tr>
-                <!-- Trzecia kolejka (Decydujące mecze, rozgrywane równolegle) -->
-                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇿 Czechy</span> vs <span class="team">🇲🇽 Meksyk</span></td><td class="group-tag">Grupa A</td></tr>
-                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team">🇿🇦 RPA</span> vs <span class="team">🇰🇷 Korea Płd.</span></td><td class="group-tag">Grupa A</td></tr>
-                <tr><td class="date">25 czerwca, 00:00</td><td class="match-details"><span class="team">🇨🇭 Szwajcaria</span> vs <span class="team">🇨🇦 Kanada</span></td><td class="group-tag">Grupa B</td></tr>
-                <tr><td class="date">25 czerwca, 00:00</td><td class="match-details"><span class="team">🇧🇦 Bośnia i Herc.</span> vs <span class="team">🇶🇦 Katar</span></td><td class="group-tag">Grupa B</td></tr>
-                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Szkocja</span> vs <span class="team">🇧🇷 Brazylia</span></td><td class="group-tag">Grupa C</td></tr>
-                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team">🇲🇦 Maroko</span> vs <span class="team">🇭🇹 Haiti</span></td><td class="group-tag">Grupa C</td></tr>
-                <tr><td class="date">26 czerwca, 00:00</td><td class="match-details"><span class="team">🇹🇷 Turcja</span> vs <span class="team">🇺🇸 USA</span></td><td class="group-tag">Grupa D</td></tr>
-                <tr><td class="date">26 czerwca, 00:00</td><td class="match-details"><span class="team">🇵🇾 Paragwaj</span> vs <span class="team">🇦🇺 Australia</span></td><td class="group-tag">Grupa D</td></tr>
-                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team">🇪🇨 Ekwador</span> vs <span class="team">🇩🇪 Niemcy</span></td><td class="group-tag">Grupa E</td></tr>
-                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇮 Wybrzeże Kości Sł.</span> vs <span class="team">🇨🇼 Curaçao</span></td><td class="group-tag">Grupa E</td></tr>
-                <tr><td class="date">27 czerwca, 00:00</td><td class="match-details"><span class="team">🇹🇳 Tunezja</span> vs <span class="team">🇳🇱 Holandia</span></td><td class="group-tag">Grupa F</td></tr>
-                <tr><td class="date">27 czerwca, 00:00</td><td class="match-details"><span class="team">🇯🇵 Japonia</span> vs <span class="team">🇸🇪 Szwecja</span></td><td class="group-tag">Grupa F</td></tr>
-                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇲 Kamerun</span> vs <span class="team">🇧🇪 Belgia</span></td><td class="group-tag">Grupa G</td></tr>
-                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team">🇪🇬 Egipt</span> vs <span class="team">🇮🇹 Włochy</span></td><td class="group-tag">Grupa G</td></tr>
-                <tr><td class="date">28 czerwca, 00:00</td><td class="match-details"><span class="team">🇨🇻 Rep. Zielonego Przylądka</span> vs <span class="team">🇫🇷 Francja</span></td><td class="group-tag">Grupa H</td></tr>
-                <tr><td class="date">28 czerwca, 00:00</td><td class="match-details"><span class="team">🇭🇳 Honduras</span> vs <span class="team">🇪🇸 Hiszpania</span></td><td class="group-tag">Grupa H</td></tr>
-                <tr><td class="date">28 czerwca, 21:00</td><td class="match-details"><span class="team">🇩🇿 Algieria</span> vs <span class="team">🇦🇷 Argentyna</span></td><td class="group-tag">Grupa I</td></tr>
-                <tr><td class="date">28 czerwca, 21:00</td><td class="match-details"><span class="team">🇨🇱 Chile</span> vs <span class="team">🇮🇷 Iran</span></td><td class="group-tag">Grupa I</td></tr>
-                <tr><td class="date">29 czerwca, 00:00</td><td class="match-details"><span class="team">🇳🇬 Nigeria</span> vs <span class="team">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglia</span></td><td class="group-tag">Grupa J</td></tr>
-                <tr><td class="date">29 czerwca, 00:00</td><td class="match-details"><span class="team">🇵🇪 Peru</span> vs <span class="team">🇺🇿 Uzbekistan</span></td><td class="group-tag">Grupa J</td></tr>
-                <tr><td class="date">29 czerwca, 21:00</td><td class="match-details"><span class="team">🇮🇶 Irak</span> vs <span class="team">🇺🇾 Urugwaj</span></td><td class="group-tag">Grupa K</td></tr>
-                <tr><td class="date">29 czerwca, 21:00</td><td class="match-details"><span class="team">🇭🇷 Chorwacja</span> vs <span class="team">🇳🇿 Nowa Zelandia</span></td><td class="group-tag">Grupa K</td></tr>
-                <tr><td class="date">30 czerwca, 00:00</td><td class="match-details"><span class="team">🇸🇳 Senegal</span> vs <span class="team">🇵🇹 Portugalia</span></td><td class="group-tag">Grupa L</td></tr>
-                <tr><td class="date">30 czerwca, 00:00</td><td class="match-details"><span class="team">🇩🇰 Dania</span> vs <span class="team">🇴🇲 Oman</span></td><td class="group-tag">Grupa L</td></tr>
+                <tr><td class="date">17 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/uy.png" class="flag" alt=""> Urugwaj</span> vs <span class="team"><img src="https://flagcdn.com/w40/nz.png" class="flag" alt=""> Nowa Zelandia</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">17 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/hr.png" class="flag" alt=""> Chorwacja</span> vs <span class="team"><img src="https://flagcdn.com/w40/iq.png" class="flag" alt=""> Irak</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">18 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/pt.png" class="flag" alt=""> Portugalia</span> vs <span class="team"><img src="https://flagcdn.com/w40/om.png" class="flag" alt=""> Oman</span></td><td class="group-tag">Grupa L</td></tr>
+                <tr><td class="date">18 czerwca, 03:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/dk.png" class="flag" alt=""> Dania</span> vs <span class="team"><img src="https://flagcdn.com/w40/sn.png" class="flag" alt=""> Senegal</span></td><td class="group-tag">Grupa L</td></tr>
+                <!-- Druga kolejka -->
+                <tr><td class="date">18 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/mx.png" class="flag" alt=""> Meksyk</span> vs <span class="team"><img src="https://flagcdn.com/w40/kr.png" class="flag" alt=""> Korea Płd.</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">18 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/za.png" class="flag" alt=""> RPA</span> vs <span class="team"><img src="https://flagcdn.com/w40/cz.png" class="flag" alt=""> Czechy</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">19 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ca.png" class="flag" alt=""> Kanada</span> vs <span class="team"><img src="https://flagcdn.com/w40/qa.png" class="flag" alt=""> Katar</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">19 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ba.png" class="flag" alt=""> Bośnia i Herc.</span> vs <span class="team"><img src="https://flagcdn.com/w40/ch.png" class="flag" alt=""> Szwajcaria</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">20 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/br.png" class="flag" alt=""> Brazylia</span> vs <span class="team"><img src="https://flagcdn.com/w40/ht.png" class="flag" alt=""> Haiti</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">20 czerwca, 03:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ma.png" class="flag" alt=""> Maroko</span> vs <span class="team"><img src="https://flagcdn.com/w40/gb-sct.png" class="flag" alt=""> Szkocja</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">20 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/us.png" class="flag" alt=""> USA</span> vs <span class="team"><img src="https://flagcdn.com/w40/au.png" class="flag" alt=""> Australia</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">20 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/py.png" class="flag" alt=""> Paragwaj</span> vs <span class="team"><img src="https://flagcdn.com/w40/tr.png" class="flag" alt=""> Turcja</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">21 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/de.png" class="flag" alt=""> Niemcy</span> vs <span class="team"><img src="https://flagcdn.com/w40/ci.png" class="flag" alt=""> Wybrzeże Kości Sł.</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">21 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/cw.png" class="flag" alt=""> Curaçao</span> vs <span class="team"><img src="https://flagcdn.com/w40/ec.png" class="flag" alt=""> Ekwador</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">22 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/nl.png" class="flag" alt=""> Holandia</span> vs <span class="team"><img src="https://flagcdn.com/w40/se.png" class="flag" alt=""> Szwecja</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">22 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/jp.png" class="flag" alt=""> Japonia</span> vs <span class="team"><img src="https://flagcdn.com/w40/tn.png" class="flag" alt=""> Tunezja</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">23 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/be.png" class="flag" alt=""> Belgia</span> vs <span class="team"><img src="https://flagcdn.com/w40/it.png" class="flag" alt=""> Włochy</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">23 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/eg.png" class="flag" alt=""> Egipt</span> vs <span class="team"><img src="https://flagcdn.com/w40/cm.png" class="flag" alt=""> Kamerun</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">24 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/fr.png" class="flag" alt=""> Francja</span> vs <span class="team"><img src="https://flagcdn.com/w40/es.png" class="flag" alt=""> Hiszpania</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/hn.png" class="flag" alt=""> Honduras</span> vs <span class="team"><img src="https://flagcdn.com/w40/cv.png" class="flag" alt=""> Rep. Zielonego Przylądka</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">25 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ar.png" class="flag" alt=""> Argentyna</span> vs <span class="team"><img src="https://flagcdn.com/w40/cl.png" class="flag" alt=""> Chile</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ir.png" class="flag" alt=""> Iran</span> vs <span class="team"><img src="https://flagcdn.com/w40/dz.png" class="flag" alt=""> Algieria</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">26 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/gb-eng.png" class="flag" alt=""> Anglia</span> vs <span class="team"><img src="https://flagcdn.com/w40/pe.png" class="flag" alt=""> Peru</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/uz.png" class="flag" alt=""> Uzbekistan</span> vs <span class="team"><img src="https://flagcdn.com/w40/ng.png" class="flag" alt=""> Nigeria</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">27 czerwca, 18:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/uy.png" class="flag" alt=""> Urugwaj</span> vs <span class="team"><img src="https://flagcdn.com/w40/hr.png" class="flag" alt=""> Chorwacja</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/nz.png" class="flag" alt=""> Nowa Zelandia</span> vs <span class="team"><img src="https://flagcdn.com/w40/iq.png" class="flag" alt=""> Irak</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">27 czerwca, 23:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/pt.png" class="flag" alt=""> Portugalia</span> vs <span class="team"><img src="https://flagcdn.com/w40/dk.png" class="flag" alt=""> Dania</span></td><td class="group-tag">Grupa L</td></tr>
+                <tr><td class="date">28 czerwca, 02:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/om.png" class="flag" alt=""> Oman</span> vs <span class="team"><img src="https://flagcdn.com/w40/sn.png" class="flag" alt=""> Senegal</span></td><td class="group-tag">Grupa L</td></tr>
+                <!-- Trzecia kolejka -->
+                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/cz.png" class="flag" alt=""> Czechy</span> vs <span class="team"><img src="https://flagcdn.com/w40/mx.png" class="flag" alt=""> Meksyk</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">24 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/za.png" class="flag" alt=""> RPA</span> vs <span class="team"><img src="https://flagcdn.com/w40/kr.png" class="flag" alt=""> Korea Płd.</span></td><td class="group-tag">Grupa A</td></tr>
+                <tr><td class="date">25 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ch.png" class="flag" alt=""> Szwajcaria</span> vs <span class="team"><img src="https://flagcdn.com/w40/ca.png" class="flag" alt=""> Kanada</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">25 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ba.png" class="flag" alt=""> Bośnia i Herc.</span> vs <span class="team"><img src="https://flagcdn.com/w40/qa.png" class="flag" alt=""> Katar</span></td><td class="group-tag">Grupa B</td></tr>
+                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/gb-sct.png" class="flag" alt=""> Szkocja</span> vs <span class="team"><img src="https://flagcdn.com/w40/br.png" class="flag" alt=""> Brazylia</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">25 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ma.png" class="flag" alt=""> Maroko</span> vs <span class="team"><img src="https://flagcdn.com/w40/ht.png" class="flag" alt=""> Haiti</span></td><td class="group-tag">Grupa C</td></tr>
+                <tr><td class="date">26 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/tr.png" class="flag" alt=""> Turcja</span> vs <span class="team"><img src="https://flagcdn.com/w40/us.png" class="flag" alt=""> USA</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">26 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/py.png" class="flag" alt=""> Paragwaj</span> vs <span class="team"><img src="https://flagcdn.com/w40/au.png" class="flag" alt=""> Australia</span></td><td class="group-tag">Grupa D</td></tr>
+                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ec.png" class="flag" alt=""> Ekwador</span> vs <span class="team"><img src="https://flagcdn.com/w40/de.png" class="flag" alt=""> Niemcy</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">26 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ci.png" class="flag" alt=""> Wybrzeże Kości Sł.</span> vs <span class="team"><img src="https://flagcdn.com/w40/cw.png" class="flag" alt=""> Curaçao</span></td><td class="group-tag">Grupa E</td></tr>
+                <tr><td class="date">27 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/tn.png" class="flag" alt=""> Tunezja</span> vs <span class="team"><img src="https://flagcdn.com/w40/nl.png" class="flag" alt=""> Holandia</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">27 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/jp.png" class="flag" alt=""> Japonia</span> vs <span class="team"><img src="https://flagcdn.com/w40/se.png" class="flag" alt=""> Szwecja</span></td><td class="group-tag">Grupa F</td></tr>
+                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/cm.png" class="flag" alt=""> Kamerun</span> vs <span class="team"><img src="https://flagcdn.com/w40/be.png" class="flag" alt=""> Belgia</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">27 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/eg.png" class="flag" alt=""> Egipt</span> vs <span class="team"><img src="https://flagcdn.com/w40/it.png" class="flag" alt=""> Włochy</span></td><td class="group-tag">Grupa G</td></tr>
+                <tr><td class="date">28 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/cv.png" class="flag" alt=""> Rep. Zielonego Przylądka</span> vs <span class="team"><img src="https://flagcdn.com/w40/fr.png" class="flag" alt=""> Francja</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">28 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/hn.png" class="flag" alt=""> Honduras</span> vs <span class="team"><img src="https://flagcdn.com/w40/es.png" class="flag" alt=""> Hiszpania</span></td><td class="group-tag">Grupa H</td></tr>
+                <tr><td class="date">28 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/dz.png" class="flag" alt=""> Algieria</span> vs <span class="team"><img src="https://flagcdn.com/w40/ar.png" class="flag" alt=""> Argentyna</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">28 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/cl.png" class="flag" alt=""> Chile</span> vs <span class="team"><img src="https://flagcdn.com/w40/ir.png" class="flag" alt=""> Iran</span></td><td class="group-tag">Grupa I</td></tr>
+                <tr><td class="date">29 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/ng.png" class="flag" alt=""> Nigeria</span> vs <span class="team"><img src="https://flagcdn.com/w40/gb-eng.png" class="flag" alt=""> Anglia</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">29 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/pe.png" class="flag" alt=""> Peru</span> vs <span class="team"><img src="https://flagcdn.com/w40/uz.png" class="flag" alt=""> Uzbekistan</span></td><td class="group-tag">Grupa J</td></tr>
+                <tr><td class="date">29 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/iq.png" class="flag" alt=""> Irak</span> vs <span class="team"><img src="https://flagcdn.com/w40/uy.png" class="flag" alt=""> Urugwaj</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">29 czerwca, 21:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/hr.png" class="flag" alt=""> Chorwacja</span> vs <span class="team"><img src="https://flagcdn.com/w40/nz.png" class="flag" alt=""> Nowa Zelandia</span></td><td class="group-tag">Grupa K</td></tr>
+                <tr><td class="date">30 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/sn.png" class="flag" alt=""> Senegal</span> vs <span class="team"><img src="https://flagcdn.com/w40/pt.png" class="flag" alt=""> Portugalia</span></td><td class="group-tag">Grupa L</td></tr>
+                <tr><td class="date">30 czerwca, 00:00</td><td class="match-details"><span class="team"><img src="https://flagcdn.com/w40/dk.png" class="flag" alt=""> Dania</span> vs <span class="team"><img src="https://flagcdn.com/w40/om.png" class="flag" alt=""> Oman</span></td><td class="group-tag">Grupa L</td></tr>
             </tbody>
         </table>
     </div>
@@ -159,12 +163,12 @@
                 <h3 class="group-title">Grupa A</h3>
                 <table>
                     <tbody>
-                        <tr><td>11.06, 21:00</td><td>🇲🇽 MEX vs 🇿🇦 RPA</td></tr>
-                        <tr><td>12.06, 04:00</td><td>🇰🇷 KOR vs 🇨🇿 CZE</td></tr>
-                        <tr><td>18.06, 18:00</td><td>🇲🇽 MEX vs 🇰🇷 KOR</td></tr>
-                        <tr><td>18.06, 21:00</td><td>🇿🇦 RPA vs 🇨🇿 CZE</td></tr>
-                        <tr><td>24.06, 21:00</td><td>🇨🇿 CZE vs 🇲🇽 MEX</td></tr>
-                        <tr><td>24.06, 21:00</td><td>🇿🇦 RPA vs 🇰🇷 KOR</td></tr>
+                        <tr><td>11.06, 21:00</td><td><img src="https://flagcdn.com/w20/mx.png" class="flag-mini" alt=""> MEX vs <img src="https://flagcdn.com/w20/za.png" class="flag-mini" alt=""> RPA</td></tr>
+                        <tr><td>12.06, 04:00</td><td><img src="https://flagcdn.com/w20/kr.png" class="flag-mini" alt=""> KOR vs <img src="https://flagcdn.com/w20/cz.png" class="flag-mini" alt=""> CZE</td></tr>
+                        <tr><td>18.06, 18:00</td><td><img src="https://flagcdn.com/w20/mx.png" class="flag-mini" alt=""> MEX vs <img src="https://flagcdn.com/w20/kr.png" class="flag-mini" alt=""> KOR</td></tr>
+                        <tr><td>18.06, 21:00</td><td><img src="https://flagcdn.com/w20/za.png" class="flag-mini" alt=""> RPA vs <img src="https://flagcdn.com/w20/cz.png" class="flag-mini" alt=""> CZE</td></tr>
+                        <tr><td>24.06, 21:00</td><td><img src="https://flagcdn.com/w20/cz.png" class="flag-mini" alt=""> CZE vs <img src="https://flagcdn.com/w20/mx.png" class="flag-mini" alt=""> MEX</td></tr>
+                        <tr><td>24.06, 21:00</td><td><img src="https://flagcdn.com/w20/za.png" class="flag-mini" alt=""> RPA vs <img src="https://flagcdn.com/w20/kr.png" class="flag-mini" alt=""> KOR</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -173,12 +177,12 @@
                 <h3 class="group-title">Grupa B</h3>
                 <table>
                     <tbody>
-                        <tr><td>12.06, 21:00</td><td>🇨🇦 CAN vs 🇧🇦 BIH</td></tr>
-                        <tr><td>13.06, 21:00</td><td>🇶🇦 QAT vs 🇨🇭 SUI</td></tr>
-                        <tr><td>19.06, 18:00</td><td>🇨🇦 CAN vs 🇶🇦 QAT</td></tr>
-                        <tr><td>19.06, 21:00</td><td>🇧🇦 BIH vs 🇨🇭 SUI</td></tr>
-                        <tr><td>25.06, 00:00</td><td>🇨🇭 SUI vs 🇨🇦 CAN</td></tr>
-                        <tr><td>25.06, 00:00</td><td>🇧🇦 BIH vs 🇶🇦 QAT</td></tr>
+                        <tr><td>12.06, 21:00</td><td><img src="https://flagcdn.com/w20/ca.png" class="flag-mini" alt=""> CAN vs <img src="https://flagcdn.com/w20/ba.png" class="flag-mini" alt=""> BIH</td></tr>
+                        <tr><td>13.06, 21:00</td><td><img src="https://flagcdn.com/w20/qa.png" class="flag-mini" alt=""> QAT vs <img src="https://flagcdn.com/w20/ch.png" class="flag-mini" alt=""> SUI</td></tr>
+                        <tr><td>19.06, 18:00</td><td><img src="https://flagcdn.com/w20/ca.png" class="flag-mini" alt=""> CAN vs <img src="https://flagcdn.com/w20/qa.png" class="flag-mini" alt=""> QAT</td></tr>
+                        <tr><td>19.06, 21:00</td><td><img src="https://flagcdn.com/w20/ba.png" class="flag-mini" alt=""> BIH vs <img src="https://flagcdn.com/w20/ch.png" class="flag-mini" alt=""> SUI</td></tr>
+                        <tr><td>25.06, 00:00</td><td><img src="https://flagcdn.com/w20/ch.png" class="flag-mini" alt=""> SUI vs <img src="https://flagcdn.com/w20/ca.png" class="flag-mini" alt=""> CAN</td></tr>
+                        <tr><td>25.06, 00:00</td><td><img src="https://flagcdn.com/w20/ba.png" class="flag-mini" alt=""> BIH vs <img src="https://flagcdn.com/w20/qa.png" class="flag-mini" alt=""> QAT</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -187,12 +191,12 @@
                 <h3 class="group-title">Grupa C</h3>
                 <table>
                     <tbody>
-                        <tr><td>14.06, 00:00</td><td>🇧🇷 BRA vs 🇲🇦 MAR</td></tr>
-                        <tr><td>14.06, 03:00</td><td>🇭🇹 HAI vs 🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO</td></tr>
-                        <tr><td>20.06, 00:00</td><td>🇧🇷 BRA vs 🇭🇹 HAI</td></tr>
-                        <tr><td>20.06, 03:00</td><td>🇲🇦 MAR vs 🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO</td></tr>
-                        <tr><td>25.06, 21:00</td><td>🏴󠁧󠁢󠁳󠁣󠁴󠁿 SCO vs 🇧🇷 BRA</td></tr>
-                        <tr><td>25.06, 21:00</td><td>🇲🇦 MAR vs 🇭🇹 HAI</td></tr>
+                        <tr><td>14.06, 00:00</td><td><img src="https://flagcdn.com/w20/br.png" class="flag-mini" alt=""> BRA vs <img src="https://flagcdn.com/w20/ma.png" class="flag-mini" alt=""> MAR</td></tr>
+                        <tr><td>14.06, 03:00</td><td><img src="https://flagcdn.com/w20/ht.png" class="flag-mini" alt=""> HAI vs <img src="https://flagcdn.com/w20/gb-sct.png" class="flag-mini" alt=""> SCO</td></tr>
+                        <tr><td>20.06, 00:00</td><td><img src="https://flagcdn.com/w20/br.png" class="flag-mini" alt=""> BRA vs <img src="https://flagcdn.com/w20/ht.png" class="flag-mini" alt=""> HAI</td></tr>
+                        <tr><td>20.06, 03:00</td><td><img src="https://flagcdn.com/w20/ma.png" class="flag-mini" alt=""> MAR vs <img src="https://flagcdn.com/w20/gb-sct.png" class="flag-mini" alt=""> SCO</td></tr>
+                        <tr><td>25.06, 21:00</td><td><img src="https://flagcdn.com/w20/gb-sct.png" class="flag-mini" alt=""> SCO vs <img src="https://flagcdn.com/w20/br.png" class="flag-mini" alt=""> BRA</td></tr>
+                        <tr><td>25.06, 21:00</td><td><img src="https://flagcdn.com/w20/ma.png" class="flag-mini" alt=""> MAR vs <img src="https://flagcdn.com/w20/ht.png" class="flag-mini" alt=""> HAI</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -201,12 +205,12 @@
                 <h3 class="group-title">Grupa D</h3>
                 <table>
                     <tbody>
-                        <tr><td>13.06, 03:00</td><td>🇺🇸 USA vs 🇵🇾 PAR</td></tr>
-                        <tr><td>14.06, 06:00</td><td>🇦🇺 AUS vs 🇹🇷 TUR</td></tr>
-                        <tr><td>20.06, 18:00</td><td>🇺🇸 USA vs 🇦🇺 AUS</td></tr>
-                        <tr><td>20.06, 21:00</td><td>🇵🇾 PAR vs 🇹🇷 TUR</td></tr>
-                        <tr><td>26.06, 00:00</td><td>🇹🇷 TUR vs 🇺🇸 USA</td></tr>
-                        <tr><td>26.06, 00:00</td><td>🇵🇾 PAR vs 🇦🇺 AUS</td></tr>
+                        <tr><td>13.06, 03:00</td><td><img src="https://flagcdn.com/w20/us.png" class="flag-mini" alt=""> USA vs <img src="https://flagcdn.com/w20/py.png" class="flag-mini" alt=""> PAR</td></tr>
+                        <tr><td>14.06, 06:00</td><td><img src="https://flagcdn.com/w20/au.png" class="flag-mini" alt=""> AUS vs <img src="https://flagcdn.com/w20/tr.png" class="flag-mini" alt=""> TUR</td></tr>
+                        <tr><td>20.06, 18:00</td><td><img src="https://flagcdn.com/w20/us.png" class="flag-mini" alt=""> USA vs <img src="https://flagcdn.com/w20/au.png" class="flag-mini" alt=""> AUS</td></tr>
+                        <tr><td>20.06, 21:00</td><td><img src="https://flagcdn.com/w20/py.png" class="flag-mini" alt=""> PAR vs <img src="https://flagcdn.com/w20/tr.png" class="flag-mini" alt=""> TUR</td></tr>
+                        <tr><td>26.06, 00:00</td><td><img src="https://flagcdn.com/w20/tr.png" class="flag-mini" alt=""> TUR vs <img src="https://flagcdn.com/w20/us.png" class="flag-mini" alt=""> USA</td></tr>
+                        <tr><td>26.06, 00:00</td><td><img src="https://flagcdn.com/w20/py.png" class="flag-mini" alt=""> PAR vs <img src="https://flagcdn.com/w20/au.png" class="flag-mini" alt=""> AUS</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -215,12 +219,12 @@
                 <h3 class="group-title">Grupa E</h3>
                 <table>
                     <tbody>
-                        <tr><td>14.06, 19:00</td><td>🇩🇪 GER vs 🇨🇼 CUW</td></tr>
-                        <tr><td>15.06, 01:00</td><td>🇨🇮 CIV vs 🇪🇨 ECU</td></tr>
-                        <tr><td>21.06, 18:00</td><td>🇩🇪 GER vs 🇨🇮 CIV</td></tr>
-                        <tr><td>21.06, 21:00</td><td>🇨🇼 CUW vs 🇪🇨 ECU</td></tr>
-                        <tr><td>26.06, 21:00</td><td>🇪🇨 ECU vs 🇩🇪 GER</td></tr>
-                        <tr><td>26.06, 21:00</td><td>🇨🇮 CIV vs 🇨🇼 CUW</td></tr>
+                        <tr><td>14.06, 19:00</td><td><img src="https://flagcdn.com/w20/de.png" class="flag-mini" alt=""> GER vs <img src="https://flagcdn.com/w20/cw.png" class="flag-mini" alt=""> CUW</td></tr>
+                        <tr><td>15.06, 01:00</td><td><img src="https://flagcdn.com/w20/ci.png" class="flag-mini" alt=""> CIV vs <img src="https://flagcdn.com/w20/ec.png" class="flag-mini" alt=""> ECU</td></tr>
+                        <tr><td>21.06, 18:00</td><td><img src="https://flagcdn.com/w20/de.png" class="flag-mini" alt=""> GER vs <img src="https://flagcdn.com/w20/ci.png" class="flag-mini" alt=""> CIV</td></tr>
+                        <tr><td>21.06, 21:00</td><td><img src="https://flagcdn.com/w20/cw.png" class="flag-mini" alt=""> CUW vs <img src="https://flagcdn.com/w20/ec.png" class="flag-mini" alt=""> ECU</td></tr>
+                        <tr><td>26.06, 21:00</td><td><img src="https://flagcdn.com/w20/ec.png" class="flag-mini" alt=""> ECU vs <img src="https://flagcdn.com/w20/de.png" class="flag-mini" alt=""> GER</td></tr>
+                        <tr><td>26.06, 21:00</td><td><img src="https://flagcdn.com/w20/ci.png" class="flag-mini" alt=""> CIV vs <img src="https://flagcdn.com/w20/cw.png" class="flag-mini" alt=""> CUW</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -229,12 +233,12 @@
                 <h3 class="group-title">Grupa F</h3>
                 <table>
                     <tbody>
-                        <tr><td>14.06, 22:00</td><td>🇳🇱 NED vs 🇯🇵 JPN</td></tr>
-                        <tr><td>15.06, 04:00</td><td>🇸🇪 SWE vs 🇹🇳 TUN</td></tr>
-                        <tr><td>22.06, 18:00</td><td>🇳🇱 NED vs 🇸🇪 SWE</td></tr>
-                        <tr><td>22.06, 21:00</td><td>🇯🇵 JPN vs 🇹🇳 TUN</td></tr>
-                        <tr><td>27.06, 00:00</td><td>🇹🇳 TUN vs 🇳🇱 NED</td></tr>
-                        <tr><td>27.06, 00:00</td><td>🇯🇵 JPN vs 🇸🇪 SWE</td></tr>
+                        <tr><td>14.06, 22:00</td><td><img src="https://flagcdn.com/w20/nl.png" class="flag-mini" alt=""> NED vs <img src="https://flagcdn.com/w20/jp.png" class="flag-mini" alt=""> JPN</td></tr>
+                        <tr><td>15.06, 04:00</td><td><img src="https://flagcdn.com/w20/se.png" class="flag-mini" alt=""> SWE vs <img src="https://flagcdn.com/w20/tn.png" class="flag-mini" alt=""> TUN</td></tr>
+                        <tr><td>22.06, 18:00</td><td><img src="https://flagcdn.com/w20/nl.png" class="flag-mini" alt=""> NED vs <img src="https://flagcdn.com/w20/se.png" class="flag-mini" alt=""> SWE</td></tr>
+                        <tr><td>22.06, 21:00</td><td><img src="https://flagcdn.com/w20/jp.png" class="flag-mini" alt=""> JPN vs <img src="https://flagcdn.com/w20/tn.png" class="flag-mini" alt=""> TUN</td></tr>
+                        <tr><td>27.06, 00:00</td><td><img src="https://flagcdn.com/w20/tn.png" class="flag-mini" alt=""> TUN vs <img src="https://flagcdn.com/w20/nl.png" class="flag-mini" alt=""> NED</td></tr>
+                        <tr><td>27.06, 00:00</td><td><img src="https://flagcdn.com/w20/jp.png" class="flag-mini" alt=""> JPN vs <img src="https://flagcdn.com/w20/se.png" class="flag-mini" alt=""> SWE</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -243,12 +247,12 @@
                 <h3 class="group-title">Grupa G</h3>
                 <table>
                     <tbody>
-                        <tr><td>15.06, 21:00</td><td>🇧🇪 BEL vs 🇪🇬 EGY</td></tr>
-                        <tr><td>16.06, 18:00</td><td>🇮🇹 ITA vs 🇨🇲 CMR</td></tr>
-                        <tr><td>23.06, 18:00</td><td>🇧🇪 BEL vs 🇮🇹 ITA</td></tr>
-                        <tr><td>23.06, 21:00</td><td>🇪🇬 EGY vs 🇨🇲 CMR</td></tr>
-                        <tr><td>27.06, 21:00</td><td>🇨🇲 CMR vs 🇧🇪 BEL</td></tr>
-                        <tr><td>27.06, 21:00</td><td>🇪🇬 EGY vs 🇮🇹 ITA</td></tr>
+                        <tr><td>15.06, 21:00</td><td><img src="https://flagcdn.com/w20/be.png" class="flag-mini" alt=""> BEL vs <img src="https://flagcdn.com/w20/eg.png" class="flag-mini" alt=""> EGY</td></tr>
+                        <tr><td>16.06, 18:00</td><td><img src="https://flagcdn.com/w20/it.png" class="flag-mini" alt=""> ITA vs <img src="https://flagcdn.com/w20/cm.png" class="flag-mini" alt=""> CMR</td></tr>
+                        <tr><td>23.06, 18:00</td><td><img src="https://flagcdn.com/w20/be.png" class="flag-mini" alt=""> BEL vs <img src="https://flagcdn.com/w20/it.png" class="flag-mini" alt=""> ITA</td></tr>
+                        <tr><td>23.06, 21:00</td><td><img src="https://flagcdn.com/w20/eg.png" class="flag-mini" alt=""> EGY vs <img src="https://flagcdn.com/w20/cm.png" class="flag-mini" alt=""> CMR</td></tr>
+                        <tr><td>27.06, 21:00</td><td><img src="https://flagcdn.com/w20/cm.png" class="flag-mini" alt=""> CMR vs <img src="https://flagcdn.com/w20/be.png" class="flag-mini" alt=""> BEL</td></tr>
+                        <tr><td>27.06, 21:00</td><td><img src="https://flagcdn.com/w20/eg.png" class="flag-mini" alt=""> EGY vs <img src="https://flagcdn.com/w20/it.png" class="flag-mini" alt=""> ITA</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -257,12 +261,12 @@
                 <h3 class="group-title">Grupa H</h3>
                 <table>
                     <tbody>
-                        <tr><td>15.06, 18:00</td><td>🇪🇸 ESP vs 🇨🇻 CPV</td></tr>
-                        <tr><td>16.06, 21:00</td><td>🇫🇷 FRA vs 🇭🇳 HON</td></tr>
-                        <tr><td>24.06, 18:00</td><td>🇫🇷 FRA vs 🇪🇸 ESP</td></tr>
-                        <tr><td>24.06, 21:00</td><td>🇭🇳 HON vs 🇨🇻 CPV</td></tr>
-                        <tr><td>28.06, 00:00</td><td>🇨🇻 CPV vs 🇫🇷 FRA</td></tr>
-                        <tr><td>28.06, 00:00</td><td>🇭🇳 HON vs 🇪🇸 ESP</td></tr>
+                        <tr><td>15.06, 18:00</td><td><img src="https://flagcdn.com/w20/es.png" class="flag-mini" alt=""> ESP vs <img src="https://flagcdn.com/w20/cv.png" class="flag-mini" alt=""> CPV</td></tr>
+                        <tr><td>16.06, 21:00</td><td><img src="https://flagcdn.com/w20/fr.png" class="flag-mini" alt=""> FRA vs <img src="https://flagcdn.com/w20/hn.png" class="flag-mini" alt=""> HON</td></tr>
+                        <tr><td>24.06, 18:00</td><td><img src="https://flagcdn.com/w20/fr.png" class="flag-mini" alt=""> FRA vs <img src="https://flagcdn.com/w20/es.png" class="flag-mini" alt=""> ESP</td></tr>
+                        <tr><td>24.06, 21:00</td><td><img src="https://flagcdn.com/w20/hn.png" class="flag-mini" alt=""> HON vs <img src="https://flagcdn.com/w20/cv.png" class="flag-mini" alt=""> CPV</td></tr>
+                        <tr><td>28.06, 00:00</td><td><img src="https://flagcdn.com/w20/cv.png" class="flag-mini" alt=""> CPV vs <img src="https://flagcdn.com/w20/fr.png" class="flag-mini" alt=""> FRA</td></tr>
+                        <tr><td>28.06, 00:00</td><td><img src="https://flagcdn.com/w20/hn.png" class="flag-mini" alt=""> HON vs <img src="https://flagcdn.com/w20/es.png" class="flag-mini" alt=""> ESP</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -271,12 +275,12 @@
                 <h3 class="group-title">Grupa I</h3>
                 <table>
                     <tbody>
-                        <tr><td>16.06, 00:00</td><td>🇦🇷 ARG vs 🇮🇷 IRN</td></tr>
-                        <tr><td>16.06, 03:00</td><td>🇨🇱 CHI vs 🇩🇿 ALG</td></tr>
-                        <tr><td>25.06, 18:00</td><td>🇦🇷 ARG vs 🇨🇱 CHI</td></tr>
-                        <tr><td>25.06, 21:00</td><td>🇮🇷 IRN vs 🇩🇿 ALG</td></tr>
-                        <tr><td>28.06, 21:00</td><td>🇩🇿 ALG vs 🇦🇷 ARG</td></tr>
-                        <tr><td>28.06, 21:00</td><td>🇨🇱 CHI vs 🇮🇷 IRN</td></tr>
+                        <tr><td>16.06, 00:00</td><td><img src="https://flagcdn.com/w20/ar.png" class="flag-mini" alt=""> ARG vs <img src="https://flagcdn.com/w20/ir.png" class="flag-mini" alt=""> IRN</td></tr>
+                        <tr><td>16.06, 03:00</td><td><img src="https://flagcdn.com/w20/cl.png" class="flag-mini" alt=""> CHI vs <img src="https://flagcdn.com/w20/dz.png" class="flag-mini" alt=""> ALG</td></tr>
+                        <tr><td>25.06, 18:00</td><td><img src="https://flagcdn.com/w20/ar.png" class="flag-mini" alt=""> ARG vs <img src="https://flagcdn.com/w20/cl.png" class="flag-mini" alt=""> CHI</td></tr>
+                        <tr><td>25.06, 21:00</td><td><img src="https://flagcdn.com/w20/ir.png" class="flag-mini" alt=""> IRN vs <img src="https://flagcdn.com/w20/dz.png" class="flag-mini" alt=""> ALG</td></tr>
+                        <tr><td>28.06, 21:00</td><td><img src="https://flagcdn.com/w20/dz.png" class="flag-mini" alt=""> ALG vs <img src="https://flagcdn.com/w20/ar.png" class="flag-mini" alt=""> ARG</td></tr>
+                        <tr><td>28.06, 21:00</td><td><img src="https://flagcdn.com/w20/cl.png" class="flag-mini" alt=""> CHI vs <img src="https://flagcdn.com/w20/ir.png" class="flag-mini" alt=""> IRN</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -285,12 +289,12 @@
                 <h3 class="group-title">Grupa J</h3>
                 <table>
                     <tbody>
-                        <tr><td>17.06, 00:00</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG vs 🇺🇿 UZB</td></tr>
-                        <tr><td>17.06, 03:00</td><td>🇵🇪 PER vs 🇳🇬 NGA</td></tr>
-                        <tr><td>26.06, 18:00</td><td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG vs 🇵🇪 PER</td></tr>
-                        <tr><td>26.06, 21:00</td><td>🇺🇿 UZB vs 🇳🇬 NGA</td></tr>
-                        <tr><td>29.06, 00:00</td><td>🇳🇬 NGA vs 🏴󠁧󠁢󠁥󠁮󠁧󠁿 ENG</td></tr>
-                        <tr><td>29.06, 00:00</td><td>🇵🇪 PER vs 🇺🇿 UZB</td></tr>
+                        <tr><td>17.06, 00:00</td><td><img src="https://flagcdn.com/w20/gb-eng.png" class="flag-mini" alt=""> ENG vs <img src="https://flagcdn.com/w20/uz.png" class="flag-mini" alt=""> UZB</td></tr>
+                        <tr><td>17.06, 03:00</td><td><img src="https://flagcdn.com/w20/pe.png" class="flag-mini" alt=""> PER vs <img src="https://flagcdn.com/w20/ng.png" class="flag-mini" alt=""> NGA</td></tr>
+                        <tr><td>26.06, 18:00</td><td><img src="https://flagcdn.com/w20/gb-eng.png" class="flag-mini" alt=""> ENG vs <img src="https://flagcdn.com/w20/pe.png" class="flag-mini" alt=""> PER</td></tr>
+                        <tr><td>26.06, 21:00</td><td><img src="https://flagcdn.com/w20/uz.png" class="flag-mini" alt=""> UZB vs <img src="https://flagcdn.com/w20/ng.png" class="flag-mini" alt=""> NGA</td></tr>
+                        <tr><td>29.06, 00:00</td><td><img src="https://flagcdn.com/w20/ng.png" class="flag-mini" alt=""> NGA vs <img src="https://flagcdn.com/w20/gb-eng.png" class="flag-mini" alt=""> ENG</td></tr>
+                        <tr><td>29.06, 00:00</td><td><img src="https://flagcdn.com/w20/pe.png" class="flag-mini" alt=""> PER vs <img src="https://flagcdn.com/w20/uz.png" class="flag-mini" alt=""> UZB</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -299,12 +303,12 @@
                 <h3 class="group-title">Grupa K</h3>
                 <table>
                     <tbody>
-                        <tr><td>17.06, 18:00</td><td>🇺🇾 URU vs 🇳🇿 NZL</td></tr>
-                        <tr><td>17.06, 21:00</td><td>🇭🇷 CRO vs 🇮🇶 IRQ</td></tr>
-                        <tr><td>27.06, 18:00</td><td>🇺🇾 URU vs 🇭🇷 CRO</td></tr>
-                        <tr><td>27.06, 21:00</td><td>🇳🇿 NZL vs 🇮🇶 IRQ</td></tr>
-                        <tr><td>29.06, 21:00</td><td>🇮🇶 IRQ vs 🇺🇾 URU</td></tr>
-                        <tr><td>29.06, 21:00</td><td>🇭🇷 CRO vs 🇳🇿 NZL</td></tr>
+                        <tr><td>17.06, 18:00</td><td><img src="https://flagcdn.com/w20/uy.png" class="flag-mini" alt=""> URU vs <img src="https://flagcdn.com/w20/nz.png" class="flag-mini" alt=""> NZL</td></tr>
+                        <tr><td>17.06, 21:00</td><td><img src="https://flagcdn.com/w20/hr.png" class="flag-mini" alt=""> CRO vs <img src="https://flagcdn.com/w20/iq.png" class="flag-mini" alt=""> IRQ</td></tr>
+                        <tr><td>27.06, 18:00</td><td><img src="https://flagcdn.com/w20/uy.png" class="flag-mini" alt=""> URU vs <img src="https://flagcdn.com/w20/hr.png" class="flag-mini" alt=""> CRO</td></tr>
+                        <tr><td>27.06, 21:00</td><td><img src="https://flagcdn.com/w20/nz.png" class="flag-mini" alt=""> NZL vs <img src="https://flagcdn.com/w20/iq.png" class="flag-mini" alt=""> IRQ</td></tr>
+                        <tr><td>29.06, 21:00</td><td><img src="https://flagcdn.com/w20/iq.png" class="flag-mini" alt=""> IRQ vs <img src="https://flagcdn.com/w20/uy.png" class="flag-mini" alt=""> URU</td></tr>
+                        <tr><td>29.06, 21:00</td><td><img src="https://flagcdn.com/w20/hr.png" class="flag-mini" alt=""> CRO vs <img src="https://flagcdn.com/w20/nz.png" class="flag-mini" alt=""> NZL</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -313,12 +317,12 @@
                 <h3 class="group-title">Grupa L</h3>
                 <table>
                     <tbody>
-                        <tr><td>18.06, 00:00</td><td>🇵🇹 POR vs 🇴🇲 OMA</td></tr>
-                        <tr><td>18.06, 03:00</td><td>🇩🇰 DEN vs 🇸🇳 SEN</td></tr>
-                        <tr><td>27.06, 23:00</td><td>🇵🇹 POR vs 🇩🇰 DEN</td></tr>
-                        <tr><td>28.06, 02:00</td><td>🇴🇲 OMA vs 🇸🇳 SEN</td></tr>
-                        <tr><td>30.06, 00:00</td><td>🇸🇳 SEN vs 🇵🇹 POR</td></tr>
-                        <tr><td>30.06, 00:00</td><td>🇩🇰 DEN vs 🇴🇲 OMA</td></tr>
+                        <tr><td>18.06, 00:00</td><td><img src="https://flagcdn.com/w20/pt.png" class="flag-mini" alt=""> POR vs <img src="https://flagcdn.com/w20/om.png" class="flag-mini" alt=""> OMA</td></tr>
+                        <tr><td>18.06, 03:00</td><td><img src="https://flagcdn.com/w20/dk.png" class="flag-mini" alt=""> DEN vs <img src="https://flagcdn.com/w20/sn.png" class="flag-mini" alt=""> SEN</td></tr>
+                        <tr><td>27.06, 23:00</td><td><img src="https://flagcdn.com/w20/pt.png" class="flag-mini" alt=""> POR vs <img src="https://flagcdn.com/w20/dk.png" class="flag-mini" alt=""> DEN</td></tr>
+                        <tr><td>28.06, 02:00</td><td><img src="https://flagcdn.com/w20/om.png" class="flag-mini" alt=""> OMA vs <img src="https://flagcdn.com/w20/sn.png" class="flag-mini" alt=""> SEN</td></tr>
+                        <tr><td>30.06, 00:00</td><td><img src="https://flagcdn.com/w20/sn.png" class="flag-mini" alt=""> SEN vs <img src="https://flagcdn.com/w20/pt.png" class="flag-mini" alt=""> POR</td></tr>
+                        <tr><td>30.06, 00:00</td><td><img src="https://flagcdn.com/w20/dk.png" class="flag-mini" alt=""> DEN vs <img src="https://flagcdn.com/w20/om.png" class="flag-mini" alt=""> OMA</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -328,16 +332,12 @@
 
 <script>
     function switchSection(sectionId, button) {
-        // Ukryj wszystkie sekcje
         document.querySelectorAll('.section').forEach(section => {
             section.classList.remove('active');
         });
-        // Odznacz wszystkie przyciski
         document.querySelectorAll('.menu-btn').forEach(btn => {
             btn.classList.remove('active');
         });
-        
-        // Pokaż wybraną sekcję i zaznacz aktywny przycisk
         document.getElementById(sectionId).classList.add('active');
         button.classList.add('active');
     }
